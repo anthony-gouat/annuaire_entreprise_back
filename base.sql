@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS Annuaire;
+
+USE Annuaire;
+
+DROP TABLE IF EXISTS utilisateur;
+
+CREATE TABLE IF NOT EXISTS utilisateur (
+    id INT NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(50) NOT NULL,
+    prenom VARCHAR(50) NOT NULL,
+    login VARCHAR(50) NOT NULL,
+    mdp TEXT NOT NULL,
+    date_arrivee DATE NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    PRIMARY KEY(id)
+);
